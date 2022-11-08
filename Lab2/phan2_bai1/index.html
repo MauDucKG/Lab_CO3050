@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <div class="h1">Yêu cầu</div>
+                <ul>
+                    <li>Nút tạo mới 1 HTML table (2x2)</li>
+                    <button class="btn btn-primary my-1" id="add_tb">Thêm mới</button>
+                    <li>Nút thêm 1 hàng vào HTML table có sẵn</li>
+                    <button class="btn btn-primary my-1" id="add_row">Thêm 1 hàng</button>
+                    <li>Nút thêm 1 cột vào HTML table có sẵn</li>
+                    <button class="btn btn-primary my-1" id="add_col">Thêm 1 cột</button>
+                    <li>Nút xoá 1 hàng (1 cột) khỏi HTML table có sẵn (chỉ số hàng/cột cần xoá được nhập vào bởi người
+                        dùng
+                        thông
+                        qua phần tử input text)</li>
+                    <div>
+                        <input type="number" class="form-control my-1" id='row' placeholder="Nhập hàng cần xóa">
+                        <button class="btn btn-danger" id="del_row">Xóa</button>
+                    </div>
+                    <div>
+                        <input type="number" class="form-control my-1" id='col' placeholder="Nhập cột cần xóa">
+                        <button class="btn btn-danger"  id="del_col">Xóa</button>
+                    </div>
+                    <li>Nút xoá toàn bộ HTML table có sẵn</li>
+                    <button class="btn btn-danger my-1" id="del_tb">Xóa</button>
+                </ul>
+            </div>
+            <div class="col-7">
+                <h1>Kết quả</h1>
+                <div class="" id="tb">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
