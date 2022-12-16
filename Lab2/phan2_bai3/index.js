@@ -39,6 +39,8 @@ function submit_form() {
     alert("Sai trường About");
     return 0;
   }
+
+  alert("Complete!");
 }
 
 function reset_form () {
